@@ -1,0 +1,41 @@
+const Content = require('../services/content.service')
+
+module.exports = {
+    
+    Create: async (req, res, next) => {
+        let content = new Content()
+        let data = await content.createContent(req.body)
+       console.log(req.body);
+        res.status(data.status).json(data)
+        return
+    },
+    Get: async (req, res, next) => {
+        let content = new Content()
+        let data = await content.getContent()
+        res.status(data.status).json(data)
+        return
+    },
+    GetById: async (req, res, next) => {
+        let profile = new Profile()
+        let data = await profile.getById(req.params.id)
+        res.status(data.status).json(data)
+        return
+    },
+    Update: async (req, res, next) => {
+        let content = new Content()
+        let data = await content.update(req.params.id, req.body)
+        res.status(data.status).json(data)
+        return
+    },
+    Delete: async (req, res, next) => {
+        let content = new Content()
+        let data = await content.delete(req.params.id)
+        res.status(data.status).json(data)
+        return
+    }
+
+   
+
+}
+
+

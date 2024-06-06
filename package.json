@@ -1,0 +1,22 @@
+{
+  "name": "bej-11-latihan-chapter-6-rizki",
+  "version": "1.0.0",
+  "description": "Chapter 6 Exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Rizki MS",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.3",
+    "pg": "^8.12.0",
+    "sequelize": "^6.37.3"
+  }
+}
